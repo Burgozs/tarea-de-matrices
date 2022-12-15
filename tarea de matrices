@@ -1,0 +1,51 @@
+//Victoria Acosta C.I:30106795  
+ 
+#include<stdio.h> 
+#include<windows.h> 
+ 
+int matrix[15][15],matrix1[15][15],matrixR[15][15],f,c,f1,c1,i,j; //f=filas c=columanas  
+ 
+ main(){ 
+  
+do{ printf("PROGRAMA PARA SUMA DE MATRICES DEL MISMO TAMANO\n"); 
+  
+ printf("Ingrese el numero de filas de la primera matriz: "); 
+  scanf("%d",&f); 
+ printf("Ingrese el numero de columnas de la primera matriz: "); 
+  scanf("%d",&c);    
+ printf("Ingrese el numero de filas de la segunda matriz: "); 
+  scanf("%d",&f1); 
+ printf("Ingrese el numero de columnas de la segunda matriz: "); 
+  scanf("%d",&c1); 
+ system("cls"); 
+   
+}while(f!=f1 || c!=c1); 
+  
+ system("cls");  
+ for(i=0;i<f;i++){ 
+  for(j=0;j<c;j++){ 
+ printf("ingrese el valor de la primera matriz [%d][%d]: ",i+1,j+1); 
+  scanf("%d",&matrix[i][j]); 
+  } 
+ }  
+  
+ system("cls"); 
+ for(i=0;i<f1;i++){ 
+  for(j=0;j<c1;j++){ 
+ printf("ingrese el valor de la segunda matriz [%d][%d]: ",i+1,j+1); 
+  scanf("%d",&matrix1[i][j]); 
+  } 
+ }  
+  
+ system("cls"); 
+ printf("RESULTADO DE SUMA DE MATRICES\n"); 
+ for(i=0;i<f1;i++){ 
+  for(j=0;j<c1;j++){ 
+ matrixR[15][15]=matrix[i][j]+matrix1[i][j]; 
+ printf("%d\t",matrixR[15][15]); 
+  }  
+ printf("\n"); 
+ } 
+   
+return 0; 
+}
